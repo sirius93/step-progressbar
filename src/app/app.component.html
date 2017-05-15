@@ -1,0 +1,24 @@
+<header>
+  <nav>
+  </nav>
+</header>
+<main>
+  <h1>Hello from {{title}}!</h1>
+
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <img src="./img/angular.png">
+
+<div class="container">
+  <ul class="progressbar">
+    <li routerLink="home" [routerLinkActive]="['active']"> Home </li>
+    <li routerLink="about" [routerLinkActive]="['active']"> About </li>
+    <li routerLink="contact" [routerLinkActive]="['active']"> Contact Us </li>
+  </ul>
+</div>
+<div class="content">    
+   <router-outlet></router-outlet>
+</div>
+</main>
+<footer>
+  <!--<a [href]="url">Webpack Angular 2 Starter</a>-->
+</footer>
